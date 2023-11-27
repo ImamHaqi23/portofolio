@@ -70,7 +70,7 @@ const dataAbout = [
     content: (
       <span className="flex gap-2">
         <img
-          src="https://skillicons.dev/icons?i=react,js,ts,tailwind,bootstrap,html,css"
+          src="https://skillicons.dev/icons?i=react,js,ts,tailwind,bootstrap,html,css,figma,git,github"
           alt="icon-react"
         />
       </span>
@@ -243,11 +243,11 @@ const Home = () => {
           <h1 className="text-3xl font-bold mb-6 ">About Me</h1>
           <p className="md:text-lg  text-slate-400">
             I am a front-end developer with a passion for creating compelling
-            web experiences. Armed with skills in HTML, CSS, and JavaScript, I
-            am committed to building interfaces that are not only aesthetically
-            pleasing, but also responsive and functional. Through my experience
-            in various projects, I take each design to the next level with an
-            eye for detail and a focus on optimal user experience.
+            web experiences. Armed with skills in HTML, CSS, JavaScript, and
+            React JS. I am committed to building interfaces that are not only
+            aesthetically pleasing, but also responsive and functional. Through
+            my experience in various projects, I take each design to the next
+            level with an eye for detail and a focus on optimal user experience.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
