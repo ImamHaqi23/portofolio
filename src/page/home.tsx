@@ -1,4 +1,7 @@
 import myimg from '../assets/Profile_Imam1-transformed.png';
+import immer from '../assets/Immersive.png';
+import hris from '../assets/hris.png';
+import evve from '../assets/evve.png';
 import myabout from '../assets/about.jpg';
 import resume from '../assets/CV-ATS-Imam Baihaqi.pdf';
 import { TypeAnimation } from 'react-type-animation';
@@ -14,7 +17,7 @@ const projectData = [
     title: 'Immersive Dashboard',
     description:
       'Aplikasi yang digunakan untuk mengelola data siswa di Alterra',
-    image: '/public/img/Immersive.PNG',
+    image: immer,
     gitUrl: 'https://github.com/ImamHaqi23/Immersive-Dashboard',
     previewUrl: 'https://immersivedash.vercel.app/',
   },
@@ -22,7 +25,7 @@ const projectData = [
     id: 2,
     title: 'HRIS Apps',
     description: 'Aplikasi yang digunakan untuk mengelola SDM perusahaan',
-    image: '/public/img/hris.PNG',
+    image: hris,
     gitUrl: 'https://github.com/ImamHaqi23/HRIS-Apps',
     previewUrl: 'https://hris-group-1.vercel.app/',
   },
@@ -31,7 +34,7 @@ const projectData = [
     title: 'EVVE Apps',
     description:
       'Aplikasi yang digunakan untuk penjualan tiket online dan pengelolaan Event',
-    image: '/public/img/evve.PNG',
+    image: evve,
     gitUrl: 'https://github.com/ImamHaqi23/EVVE-Apps',
     previewUrl: 'https://evve.vercel.app/',
   },

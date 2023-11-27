@@ -19,7 +19,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div>
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: 'cover' }}
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: '100% 100%',
+          backgroundPosition: 'center',
+        }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[#001a27] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 justify-center items-center">
           <a
