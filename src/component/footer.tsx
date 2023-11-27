@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <footer className="flex mx-auto border-t-2 border-slate-700">

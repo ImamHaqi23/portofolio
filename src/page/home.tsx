@@ -2,8 +2,8 @@ import myimg from '../assets/Profile_Imam1-transformed.png';
 import myabout from '../assets/about.jpg';
 import resume from '../assets/CV-ATS-Imam Baihaqi.pdf';
 import { TypeAnimation } from 'react-type-animation';
-import { motion, useScroll } from 'framer-motion';
-import { useState, useTransition } from 'react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 import TabButton from '../component/tabButton';
 import ProjectCard from '../component/projectCard';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa';
@@ -150,14 +150,11 @@ const textVariantsBottom = {
 
 const Home = () => {
   const [tab, setTab] = useState('skills');
-  const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id: any) => {
-    startTransition(() => {
-      setTab(id);
-    });
+    setTab(id);
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: any) => {
     event.preventDefault();
   };
 

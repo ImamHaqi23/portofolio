@@ -1,6 +1,20 @@
 import { FaEye, FaLink } from 'react-icons/fa';
 
-const ProjectCard = ({ imgUrl, title, desc, previewUrl, gitUrl }) => {
+interface ProjectCardProps {
+  imgUrl: string;
+  title: string;
+  desc: string;
+  previewUrl: string;
+  gitUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  imgUrl,
+  title,
+  desc,
+  previewUrl,
+  gitUrl,
+}) => {
   return (
     <div>
       <div
