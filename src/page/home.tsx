@@ -1,7 +1,7 @@
 import myimg from '../assets/Profile_Imam1-transformed.png';
-import immer from '../assets/Immersive.png';
-import hris from '../assets/hris.png';
-import evve from '../assets/evve.png';
+import immer from '../../public/img/Immersive.png';
+import hris from '../../public/img/hris.png';
+import evve from '../../public/img/evve.png';
 import myabout from '../assets/about.jpg';
 import resume from '../assets/CV-ATS-Imam Baihaqi.pdf';
 import { TypeAnimation } from 'react-type-animation';
