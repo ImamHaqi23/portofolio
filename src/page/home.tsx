@@ -2,6 +2,7 @@ import myimg from '../assets/Profile_Imam1-transformed.png';
 import immer from '../../public/img/Immersive.png';
 import hris from '../../public/img/hris.png';
 import evve from '../../public/img/evve.png';
+import poke from '../../public/img/my-poke.png';
 import myabout from '../assets/about.jpg';
 import resume from '../assets/CV-ATS-Imam Baihaqi.pdf';
 import { TypeAnimation } from 'react-type-animation';
@@ -37,6 +38,14 @@ const projectData = [
     image: evve,
     gitUrl: 'https://github.com/ImamHaqi23/EVVE-Apps',
     previewUrl: 'https://evve.vercel.app/',
+  },
+  {
+    id: 4,
+    title: 'My Pokemon List',
+    description: 'Aplikasi yang digunakan untuk menampikan list dari pokemon',
+    image: poke,
+    gitUrl: 'https://github.com/ImamHaqi23/my-pokemon',
+    previewUrl: 'https://my-pokemon-list-ten.vercel.app/',
   },
 ];
 
@@ -162,11 +171,11 @@ const Home = () => {
   };
 
   return (
-    <div className="scroll-smooth">
+    <div className="overflow-hidden">
       {/* Header */}
       <section
         id="header"
-        className="grid grid-cols-1 lg:grid-cols-12 mx-auto container px-16 min-h-screen mt-9 "
+        className="grid grid-cols-1 lg:grid-cols-12 mx-auto container px-16 min-h-screen"
       >
         <motion.div
           variants={textVariantsLeft}
@@ -174,7 +183,7 @@ const Home = () => {
           animate="animate"
           className="col-span-7 place-self-center text-center  sm:text-left"
         >
-          <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl mb-4">
+          <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl mb-4 mt-16 md:mt-0">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0810f]  to-[#e6df44] ">
               Hello, I'm{' '}
             </span>{' '}
@@ -201,7 +210,7 @@ const Home = () => {
           variants={textVariantsRight}
           initial="initial"
           animate="animate"
-          className="col-span-5 sm:place-self-center ml-5 -mt-7 lg:ml-14"
+          className="col-span-5 sm:place-self-center lg:ml-14"
         >
           <div className="rounded-full bg-gradient-to-br from-[#f0810f] to-[#e6df44] w-[250px] h-[250px] lg:w-[260px] lg:h-[260px] relative">
             <img
@@ -219,16 +228,16 @@ const Home = () => {
       {/* About */}
       <section
         id="about"
-        className="container grid grid-cols-1 lg:grid-cols-12 px-16 min-h-screen"
+        className="container grid grid-cols-1 lg:grid-cols-12 px-16 gap-14 min-h-screen"
       >
         <motion.div
           variants={textVariantsLeft}
           initial="initial"
           viewport={{ once: true }}
           whileInView="animate"
-          className="col-span-5 mt-1"
+          className="col-span-6 mt-14 sm:mt-0 "
         >
-          <div className="w-[300px] md:w-[500px]">
+          <div className="w-[250px] md:w-full">
             <img src={myabout} alt="imageAbout" className="rounded-xl" />
           </div>
         </motion.div>
@@ -238,10 +247,10 @@ const Home = () => {
           initial="initial"
           viewport={{ once: true }}
           whileInView="animate"
-          className="text-white col-span-7 md:pl-24 -mt-32 md:mt-0"
+          className="text-white col-span-6 md:mt-0 p-2"
         >
           <h1 className="text-3xl font-bold mb-6 ">About Me</h1>
-          <p className="md:text-lg  text-slate-400">
+          <p className="md:text-lg text-slate-400 text-justify">
             I am a front-end developer with a passion for creating compelling
             web experiences. Armed with skills in HTML, CSS, JavaScript, and
             React JS. I am committed to building interfaces that are not only
@@ -277,7 +286,10 @@ const Home = () => {
       {/* About */}
 
       {/* Project */}
-      <section id="project" className="container px-16 min-h-screen">
+      <section
+        id="project"
+        className="container px-16 min-h-screen mt-16 md:mt-0"
+      >
         <h1 className="text-center text-white text-4xl font-bold mb-16">
           My Project
         </h1>
